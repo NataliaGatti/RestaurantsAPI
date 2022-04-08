@@ -10,10 +10,12 @@ class RestaurantPolicy < ApplicationPolicy
   end
 
   def update?
-    record.user == user
+    true
+   record.user == user
   end
 
   def create?
+    true
     record.user == user
   end
 
